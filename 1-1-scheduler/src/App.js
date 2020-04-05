@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 // Components
 import LandingPage from './components/LandingPage';
+import Login from './components/Login';
+import Register from './components/Register';
 import Schedule from './components/Schedule';
 import Profile from './components/Profile';
 
@@ -15,6 +17,8 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={LandingPage} />
+          <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
           <Route path="/schedule" component={Schedule} />
           <Route path="/profile" component={Profile} />
         </Switch>
